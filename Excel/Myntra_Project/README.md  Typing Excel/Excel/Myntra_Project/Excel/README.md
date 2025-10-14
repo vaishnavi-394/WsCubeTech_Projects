@@ -28,4 +28,5 @@ Business Insights through KPI calculation and trend analysis
 💡 Goal
 
 To strengthen my ability to analyze business data and communicate insights effectively using Excel before advancing to tools like Power BI and Python.
-🔗 Connect with me on LinkedIn: Vaishnavi Chakraborty
+ 🔗 Connect with me on LinkedIn: [Vaishnavi Chakraborty](https://www.linkedin.com/in/vaishnavi-chakraborty-85b949292)
+
