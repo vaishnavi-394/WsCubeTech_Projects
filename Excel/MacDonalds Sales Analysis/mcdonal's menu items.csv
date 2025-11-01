@@ -1,0 +1,33 @@
+menu_item_id,item_name,category,price
+101,Big Mac,Burger,5.99
+102,Quarter Pounder with Cheese,Burger,6.79
+103,McDouble,Burger,1.99
+104,McPlant,Burger,3.49
+105,Chicken McNuggets (6-piece),Chicken,4.49
+106,French Fries (Large),Fries,2.89
+107,Sweet and Sour Chicken McNuggets (6-piece),Chicken,4.49
+108,Teriyaki Chicken Sandwich,Chicken,5.99
+109,Bulgogi Burger,Burger,6.49
+110,Spicy Chicken McWrap,Chicken,4.99
+111,Chicken McNuggets (10-piece),Chicken,5.99
+112,Filet-O-Fish,Sandwich,4.79
+113,Side Salad,Sides,1.99
+114,Apple Slices,Sides,1
+115,Chicken Snack Wrap,Wraps,2.99
+116,Steak & Cheese McWrap,Wraps,3.99
+117,Breakfast Burrito,Breakfast,2.79
+118,Bacon Clubhouse Burger,Burger,6.99
+119,McChicken,Chicken,2.29
+120,Angus Third Pounder,Burger,7.99
+121,Cheesy Bacon Fries,Fries,3.49
+122,Mozzarella Sticks,Sides,2.99
+123,Guacamole Chicken Burger,Burger,5.99
+124,Spaghetti Bolognese,Pasta,7.99
+125,Meatball Marinara,Pasta,8.99
+126,Chicken Alfredo Pasta,Pasta,7.99
+127,Double Cheeseburger,Burger,2.99
+128,Grilled Chicken Caesar Salad,Salad,5.49
+129,Chocolate Shake (Large),Shakes,2.99
+130,McLobster Roll,Sandwich,9.99
+131,Chicken Parm Sandwich,Sandwich,5.99
+132,Veggie Deluxe,Sandwich,4.79
