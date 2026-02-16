@@ -1,6 +1,6 @@
-# 📌 Loan Approval Prediction using Machine Learning
+#  Loan Approval Prediction using Machine Learning
 
-## 📖 Project Overview
+##  Project Overview
 
 In modern financial institutions, loan approval decisions must be fast, accurate, and unbiased. Traditionally, these decisions relied on manual evaluation of applicant details such as income, credit score, and repayment history. However, manual processes can be inconsistent, slow, and prone to human bias.
 
@@ -8,7 +8,7 @@ This project builds a data-driven machine learning system to automate loan appro
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 The goal is to predict whether a loan application will be:
 
@@ -24,7 +24,7 @@ The model uses historical applicant data including:
 
 ---
 
-## 🗂 Dataset Description
+##  Dataset Description
 
 The dataset contains the following key features:
 
@@ -40,7 +40,7 @@ The dataset contains the following key features:
 
 ---
 
-## 🛠 Technologies Used
+##  Technologies Used
 
 - Python
 - Pandas
@@ -51,27 +51,27 @@ The dataset contains the following key features:
 
 ---
 
-## ⚙ Project Workflow
+##  Project Workflow
 
-### 1️⃣ Data Preprocessing
+### 1️ Data Preprocessing
 
 - Cleaned column names
 - Handled missing values
 - Encoded categorical variables
 - Standardized numerical features
 
-### 2️⃣ Exploratory Data Analysis (EDA)
+### 2️ Exploratory Data Analysis (EDA)
 
 - Loan status distribution
 - Income vs Loan amount visualization
 - Correlation heatmap
 
-### 3️⃣ Train-Test Split
+### 3️ Train-Test Split
 
 - Stratified 80-20 split
 - Preserved class distribution
 
-### 4️⃣ Model Building
+### 4️ Model Building
 
 The following models were trained:
 
@@ -79,7 +79,7 @@ The following models were trained:
 - Decision Tree
 - Random Forest
 
-### 5️⃣ Model Evaluation
+### 5️ Model Evaluation
 
 - Accuracy Score
 - Confusion Matrix
@@ -89,29 +89,29 @@ The following models were trained:
 - ROC Curve
 - AUC Score
 
-### 6️⃣ Cross Validation
+### 6️ Cross Validation
 
 - 5-Fold Cross Validation for stability check
 
-### 7️⃣ Hyperparameter Tuning
+### 7️ Hyperparameter Tuning
 
 - GridSearchCV used to optimize Random Forest parameters
 
-### 8️⃣ Overfitting Check
+### 8️ Overfitting Check
 
 - Compared training and testing accuracy
 
-### 9️⃣ Threshold Tuning
+### 9️ Threshold Tuning
 
 - Adjusted classification threshold to control approval strictness
 
-### 🔟 Feature Importance Analysis
+### 10 Feature Importance Analysis
 
 - Identified most influential features affecting approval decisions
 
 ---
 
-## 📊 Key Insights
+##  Key Insights
 
 - Higher CIBIL scores increase approval probability
 - Higher income improves loan approval chances
@@ -120,7 +120,7 @@ The following models were trained:
 
 ---
 
-## 💡 Business Impact
+##  Business Impact
 
 This solution enables:
 
@@ -131,7 +131,7 @@ This solution enables:
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 - Deployment as web application
 - Real-time API integration
@@ -140,6 +140,6 @@ This solution enables:
 
 ---
 
-## 📌 Conclusion
+## Conclusion
 
 The optimized Random Forest model provides a scalable, efficient, and data-driven solution for automated loan approval prediction.
