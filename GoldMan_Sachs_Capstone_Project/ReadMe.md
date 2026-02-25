@@ -130,5 +130,4 @@ Build a complete credit risk analytics system to:
 | Others | <5% |
 ### Insight:
 ⚠ Portfolio revenue heavily concentrated in Debt Consolidation
-### Insight:
-⚠ Portfolio revenue heavily concentrated in Debt Consolidation
+### PBIX LINK: https://drive.google.com/file/d/1V0rtBI6260W2iu_ENd87441qIBu7xVGE/view?usp=drive_link
