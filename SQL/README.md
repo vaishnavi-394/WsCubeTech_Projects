@@ -86,6 +86,270 @@ This project demonstrates how SQL can be effectively used to analyze relational 
 By transforming raw data into actionable intelligence, businesses like Swiggy can improve customer engagement, operational efficiency, and overall growth strategy.
 
 ---
+🚴‍♀️ Jenson USA SQL Sales Analysis
+Fueling Growth with Data
+
+SQL-Driven Insights into Sales, Customers & Performance
+
+📌 Project Overview
+
+This project analyzes the Jenson USA retail database using SQL to extract actionable business insights related to:
+
+📦 Product Performance
+
+👥 Customer Spending Behavior
+
+🏬 Store Sales Trends
+
+👨‍💼 Staff Performance
+
+📊 Pricing & Demand Patterns
+
+The goal was simple:
+Turn raw transactional data into strategic decisions.
+
+🗂️ Database Structure
+
+The analysis was performed on a relational database containing the following key tables:
+
+brands
+
+categories
+
+customers
+
+order_items
+
+orders
+
+products
+
+staffs
+
+stores
+
+stocks
+
+🎯 Business Questions Addressed
+
+Which products generate the highest sales across categories?
+
+Who are the highest-spending customers?
+
+Which staff members perform above average?
+
+Which customers purchased from all categories?
+
+Which products were never ordered?
+
+How does ordering behavior impact performance?
+
+📊 Key Findings & Exact Results
+🏬 Store Performance
+🔹 Total Products Sold by Each Store
+
+Baldwin Bikes leads in total sales volume, outperforming:
+
+Santa Cruz Bikes
+
+Rowlett Bikes
+
+This indicates stronger demand and better store-level performance.
+
+📈 Cumulative Sales Trend
+
+Cumulative product sales increase steadily over time.
+
+Indicates consistent long-term demand.
+
+Helps identify products with sustained growth.
+
+🏆 Highest Sales by Category
+
+Within each category, a small number of products dominate total sales.
+
+Revenue is highly concentrated among top-performing products.
+
+💰 Highest Spending Customer
+
+Customer ID: 10
+
+Total Spend: 3,780,159
+
+This shows heavy revenue concentration from a single high-value customer.
+
+💎 Highest-Priced Product per Category
+
+Premium pricing range across categories:
+429 → 41,699
+
+This reflects strong price differentiation and premium segmentation.
+
+🔁 Orders per Customer per Store
+
+Some customers placed up to 3 orders at a single store.
+
+Indicates repeat purchasing behavior concentrated at specific locations.
+
+👨‍💼 Staff Performance Analysis
+❌ Staff with No Sales
+
+4 staff members made zero sales:
+
+Staff IDs: 1, 4, 5, 10
+
+This highlights possible underutilization or role misalignment.
+
+📈 Above-Average Performers
+
+4 staff members performed above overall average sales:
+
+Staff IDs: 2, 3, 6, 7
+
+Strong contributors to sales performance.
+
+📦 Top 3 Most Sold Products (By Quantity)
+
+Top 3 products sold approximately 290+ units each
+
+Sales are heavily concentrated among a few high-demand products.
+
+🛑 Products Never Ordered
+
+5 products have never been ordered
+
+Business implication:
+
+Zero demand items
+
+Candidates for:
+
+Discontinuation
+
+Repositioning
+
+Targeted promotions
+
+💵 Median Product Price
+
+Median Price: 74,999
+
+Meaning:
+
+50% of products are priced below 74,999
+
+50% are priced above
+
+Indicates a mid-to-premium pricing structure.
+
+🛍️ Customers Who Purchased from All Categories
+
+Only 1 customer (Customer ID: 9) purchased from all product categories.
+
+Full-category adoption is extremely limited.
+
+🧠 Strategic Recommendations
+1️⃣ Double Down on High-Performing Products
+
+Prioritize inventory for best-selling products
+
+Increase targeted promotions
+
+Optimize premium placement
+
+2️⃣ Leverage High-Value Customers
+
+Build loyalty programs for Customer ID 10-type profiles
+
+Offer exclusive deals
+
+Personalized recommendations
+
+Increase customer lifetime value
+
+3️⃣ Address Staff Performance Gaps
+
+Reassign or retrain underperforming staff
+
+Incentivize above-average performers
+
+Monitor performance metrics continuously
+
+🛠️ SQL Concepts Used
+
+GROUP BY
+
+HAVING
+
+JOIN
+
+CTE
+
+Window Functions
+
+RANK()
+
+EXISTS
+
+Aggregations (SUM, COUNT, AVG)
+
+Subqueries
+
+Median Calculation using window logic
+
+📌 Tools Used
+
+MySQL / SQL Server
+
+Relational Database (Jenson USA Schema)
+
+📁 Project Deliverables
+
+SQL query scripts
+
+Business insight summary
+
+Strategic recommendations
+
+Presentation PDF
+
+📄 Project Presentation Source: 
+
+JensonUSA_SQL_Analysis
+
+👩‍💻 Author
+
+Vaishnavi Chakaborty
+
+📧 navyaa394@gmail.com
+
+🔗 LinkedIn: (Add your link)
+💻 GitHub: (Add your link)
+
+🏁 Conclusion
+
+This project demonstrates how SQL can move beyond queries and become a decision-making engine.
+
+From identifying:
+
+High-value customers
+
+Underperforming staff
+
+Dead inventory
+
+Revenue concentration
+
+To shaping:
+
+Pricing strategy
+
+Inventory planning
+
+Customer retention models
+
+Data doesn’t just describe business.
+It drives it.
 
 ## 📬 Contact
 For any questions or collaboration:
