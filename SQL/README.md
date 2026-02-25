@@ -86,270 +86,226 @@ This project demonstrates how SQL can be effectively used to analyze relational 
 By transforming raw data into actionable intelligence, businesses like Swiggy can improve customer engagement, operational efficiency, and overall growth strategy.
 
 ---
-🚴‍♀️ Jenson USA SQL Sales Analysis
-Fueling Growth with Data
 
-SQL-Driven Insights into Sales, Customers & Performance
 
-📌 Project Overview
 
-This project analyzes the Jenson USA retail database using SQL to extract actionable business insights related to:
+# 🚴‍♀️ Jenson USA SQL Sales Analysis Project
 
-📦 Product Performance
+## 📌 Project Overview
 
-👥 Customer Spending Behavior
+This project is an SQL-based retail sales analysis case study built on the Jenson USA database.
 
-🏬 Store Sales Trends
+The goal of this project is to analyze product performance, customer spending behavior, staff efficiency, and store-level sales trends using structured SQL queries.
 
-👨‍💼 Staff Performance
+The analysis focuses on extracting meaningful **business insights** from relational retail data to support strategic decision-making.
 
-📊 Pricing & Demand Patterns
+---
 
-The goal was simple:
-Turn raw transactional data into strategic decisions.
+## 🎯 Objectives
 
-🗂️ Database Structure
+- Analyze store-wise product sales distribution
+- Identify highest revenue-generating customers
+- Evaluate staff sales performance
+- Detect dead inventory (products never ordered)
+- Understand pricing distribution patterns
+- Identify cross-category purchasing behavior
+- Derive actionable business growth insights
 
-The analysis was performed on a relational database containing the following key tables:
+---
 
-brands
+## 🗂️ Dataset Description
 
-categories
+The database represents a retail bike store system and includes the following tables:
 
-customers
+- brands
+- categories
+- customers
+- order_items
+- orders
+- products
+- staffs
+- stores
+- stocks
 
-order_items
+---
 
-orders
+## 📊 Key Business Questions Solved
 
-products
+### 1️⃣ Which store sells the highest number of products?
 
-staffs
+- Baldwin Bikes leads in total sales volume.
+- Outperforms Santa Cruz and Rowlett Bikes.
 
-stores
+Insight:
+Strong demand concentration at Baldwin Bikes store.
 
-stocks
+---
 
-🎯 Business Questions Addressed
+### 2️⃣ What is the cumulative sales trend over time?
 
-Which products generate the highest sales across categories?
+- Cumulative sales increase steadily over time.
+- Indicates consistent product demand and long-term growth stability.
 
-Who are the highest-spending customers?
+---
 
-Which staff members perform above average?
+### 3️⃣ Which products generate the highest sales per category?
 
-Which customers purchased from all categories?
+- A small number of products dominate total category sales.
+- Revenue is highly concentrated among top-performing SKUs.
 
-Which products were never ordered?
+---
 
-How does ordering behavior impact performance?
+### 4️⃣ Who is the highest spending customer?
 
-📊 Key Findings & Exact Results
-🏬 Store Performance
-🔹 Total Products Sold by Each Store
+- Customer ID: 10
+- Total Spend: 3,780,159
 
-Baldwin Bikes leads in total sales volume, outperforming:
+Insight:
+Revenue concentration risk due to dependency on a single high-value customer.
 
-Santa Cruz Bikes
+---
 
-Rowlett Bikes
+### 5️⃣ What is the highest priced product in each category?
 
-This indicates stronger demand and better store-level performance.
+- Premium product prices range from 429 to 41,699.
+- Clear price differentiation across categories.
 
-📈 Cumulative Sales Trend
+---
 
-Cumulative product sales increase steadily over time.
+### 6️⃣ How many orders does each customer place per store?
 
-Indicates consistent long-term demand.
+- Some customers placed up to 3 orders at a single store.
+- Indicates repeat purchasing behavior.
 
-Helps identify products with sustained growth.
+---
 
-🏆 Highest Sales by Category
+### 7️⃣ Which staff members have not made any sales?
 
-Within each category, a small number of products dominate total sales.
+- Staff IDs: 1, 4, 5, 10
+- Total inactive staff: 4
 
-Revenue is highly concentrated among top-performing products.
+Insight:
+Possible underutilization or performance gaps.
 
-💰 Highest Spending Customer
+---
 
-Customer ID: 10
+### 8️⃣ Which staff members perform above average?
 
-Total Spend: 3,780,159
+- Staff IDs: 2, 3, 6, 7
+- Total above-average performers: 4
 
-This shows heavy revenue concentration from a single high-value customer.
+Insight:
+High-performing core sales group identified.
 
-💎 Highest-Priced Product per Category
+---
 
-Premium pricing range across categories:
-429 → 41,699
+### 9️⃣ What are the top 3 most sold products?
 
-This reflects strong price differentiation and premium segmentation.
+- Top 3 products sold approximately 290+ units each.
+- Sales volume concentrated among limited SKUs.
 
-🔁 Orders per Customer per Store
+---
 
-Some customers placed up to 3 orders at a single store.
+### 🔟 Which products have never been ordered?
 
-Indicates repeat purchasing behavior concentrated at specific locations.
+- Total products never ordered: 5
 
-👨‍💼 Staff Performance Analysis
-❌ Staff with No Sales
+Insight:
+Dead inventory candidates for:
+- Discontinuation
+- Repositioning
+- Promotional bundling
 
-4 staff members made zero sales:
+---
 
-Staff IDs: 1, 4, 5, 10
+### 1️⃣1️⃣ What is the median product price?
 
-This highlights possible underutilization or role misalignment.
+- Median Product Price: 74,999
 
-📈 Above-Average Performers
+Interpretation:
+- 50% of products are priced below 74,999
+- 50% of products are priced above 74,999
+- Indicates mid-to-premium pricing structure
 
-4 staff members performed above overall average sales:
+---
 
-Staff IDs: 2, 3, 6, 7
+### 1️⃣2️⃣ Which customers purchased from all product categories?
 
-Strong contributors to sales performance.
+- Only 1 customer (Customer ID: 9)
 
-📦 Top 3 Most Sold Products (By Quantity)
+Insight:
+Very limited full-category adoption.
+Strong cross-selling opportunity exists.
 
-Top 3 products sold approximately 290+ units each
+---
 
-Sales are heavily concentrated among a few high-demand products.
+## 🛠️ SQL Concepts Used
 
-🛑 Products Never Ordered
+- SELECT
+- GROUP BY
+- HAVING
+- INNER JOIN
+- LEFT JOIN
+- Subqueries
+- CTE (Common Table Expressions)
+- Window Functions
+- RANK()
+- EXISTS
+- Aggregate Functions (SUM, COUNT, AVG)
+- Median calculation using row numbering logic
 
-5 products have never been ordered
+---
 
-Business implication:
+## 📈 Strategic Recommendations
 
-Zero demand items
+### 📦 Inventory Optimization
+Focus stock planning on high-demand products.
 
-Candidates for:
+### 👥 Customer Retention
+Develop loyalty programs for high-spending customers.
 
-Discontinuation
+### 👨‍💼 Sales Team Management
+- Retrain or reallocate non-performing staff.
+- Incentivize top performers.
 
-Repositioning
+### 🛒 Cross-Selling Strategy
+Encourage multi-category purchases through bundling and recommendations.
 
-Targeted promotions
+---
 
-💵 Median Product Price
+## 📂 Project Structure
 
-Median Price: 74,999
+Jenson-USA-SQL-Analysis/
+│
+├── SQL_Scripts/
+│   ├── store_sales.sql
+│   ├── top_customers.sql
+│   ├── staff_performance.sql
+│   ├── pricing_analysis.sql
+│   ├── inventory_analysis.sql
+│
+├── Presentation/
+│   └── JensonUSA_SQL_Analysis.pdf
+│
+└── README.md
 
-Meaning:
+---
 
-50% of products are priced below 74,999
+## 🏁 Conclusion
 
-50% are priced above
+This project demonstrates how SQL can be used beyond querying to:
 
-Indicates a mid-to-premium pricing structure.
+- Identify revenue concentration
+- Detect operational inefficiencies
+- Optimize pricing strategy
+- Improve inventory planning
+- Support data-driven business decisions
 
-🛍️ Customers Who Purchased from All Categories
+SQL is not just about data extraction.
+It is about transforming raw data into strategic intelligence.
 
-Only 1 customer (Customer ID: 9) purchased from all product categories.
+---
 
-Full-category adoption is extremely limited.
-
-🧠 Strategic Recommendations
-1️⃣ Double Down on High-Performing Products
-
-Prioritize inventory for best-selling products
-
-Increase targeted promotions
-
-Optimize premium placement
-
-2️⃣ Leverage High-Value Customers
-
-Build loyalty programs for Customer ID 10-type profiles
-
-Offer exclusive deals
-
-Personalized recommendations
-
-Increase customer lifetime value
-
-3️⃣ Address Staff Performance Gaps
-
-Reassign or retrain underperforming staff
-
-Incentivize above-average performers
-
-Monitor performance metrics continuously
-
-🛠️ SQL Concepts Used
-
-GROUP BY
-
-HAVING
-
-JOIN
-
-CTE
-
-Window Functions
-
-RANK()
-
-EXISTS
-
-Aggregations (SUM, COUNT, AVG)
-
-Subqueries
-
-Median Calculation using window logic
-
-📌 Tools Used
-
-MySQL / SQL Server
-
-Relational Database (Jenson USA Schema)
-
-📁 Project Deliverables
-
-SQL query scripts
-
-Business insight summary
-
-Strategic recommendations
-
-Presentation PDF
-
-📄 Project Presentation Source: 
-
-JensonUSA_SQL_Analysis
-
-👩‍💻 Author
-
-Vaishnavi Chakaborty
-
-📧 navyaa394@gmail.com
-
-🔗 LinkedIn: (Add your link)
-💻 GitHub: (Add your link)
-
-🏁 Conclusion
-
-This project demonstrates how SQL can move beyond queries and become a decision-making engine.
-
-From identifying:
-
-High-value customers
-
-Underperforming staff
-
-Dead inventory
-
-Revenue concentration
-
-To shaping:
-
-Pricing strategy
-
-Inventory planning
-
-Customer retention models
-
-Data doesn’t just describe business.
-It drives it.
 
 ## 📬 Contact
 For any questions or collaboration:
