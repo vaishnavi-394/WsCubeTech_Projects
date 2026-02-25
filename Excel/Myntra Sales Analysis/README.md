@@ -1,4 +1,3 @@
-Perfect 😎 Here’s your **final GitHub-ready, aesthetic & professional README.md** (without the folder structure part) — polished for portfolio use, with emojis, clean formatting, and modern badges 👇
 
 ---
 
